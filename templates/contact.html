@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+
+<div class="container py-4 my-4">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="border-radius: 25px;">
+                    <img src="/static/img/5.jpg" class="d-block w-100" style="border-radius: 25px;" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone.No</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone.No">
+        </div>
+
+        <div class="form-group">
+            <label for="desc">What you want to contact me for...</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+<footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn text-white" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="..................." role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"style="background-color: #333333;"href="#!"role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Umar Tanwar.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<div class="column-container">
+    
+
+    <div class="col-follow-us">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="https://github.com/django">GitHub</a></li>
+        <li><a href="https://twitter.com/djangoproject">Twitter</a></li>
+        <li><a href="https://www.djangoproject.com/rss/weblog/">News RSS</a></li>
+        <li><a href="https://groups.google.com/forum/#!forum/django-users">Django Users Mailing List</a></li>
+      </ul>
+    </div>
+
+
+
+{% endblock body %}
