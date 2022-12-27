@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from datetime import datetime
 from home.models import Contact
 from django.contrib import messages
+from django.views.decorators.csrf import csrf_exempt
 
 
 # Create your views here.
@@ -20,6 +21,7 @@ def about(request):
 def services(request):
     return render(request, 'services.html')
 
+@csrf_exempt
 def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -31,6 +33,7 @@ def contact(request):
         messages.success(request, 'Your message has been sent!')
     
     return render(request, 'contact.html')
+
 
 def projects(request):
     return render(request, 'projects.html')
