@@ -17,3 +17,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hello.settings')
 
 application = get_wsgi_application()
 
+application = MyWSGIApp()
+application = WhiteNoise(application, root="static")
+application.add_files("static/img", prefix="/static")
