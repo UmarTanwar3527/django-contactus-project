@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-70k@7jito4^*8m2(&bfgrbw5#o2hk%1*qjrsecr!y#hpejimz#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djangoprojectcontactus.up.railway.app']
 
 # Application definition
 
