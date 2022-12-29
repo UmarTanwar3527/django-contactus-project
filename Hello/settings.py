@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-# password for admin user [umartanwar]
+
 import os
 from pathlib import Path
 from django.contrib.messages import constants as messages
@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = 'django-insecure-70k@7jito4^*8m2(&bfgrbw5#o2hk%1*qjrsecr!y#hpejimz#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
