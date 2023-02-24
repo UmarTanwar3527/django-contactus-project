@@ -4,48 +4,57 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title> {% block title %}{% endblock title %} | Umar Tanwar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+  <nav class="navbar navbar-expand-lg" style="background-color: #whitesmoke;">
+    <div class="container-fluid">      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarText" >
         <ul class="navbar-nav mr-auto">
           <div class="container">
             <a class="navbar-brand " href="#">
               <img src="/static/img/PIET logo with tagline.jpg" alt="Logo" width="150" height="50">
             </a>
           </div>
-          <li class="nav-item active">
+          <li class="nav-item active m-2">
             <a class="btn btn-outline-success m-2 my-sm-0" href="/"><strong>Home</strong> <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-2">
             <a class="btn btn-outline-success" href="/services"> <strong>Services</strong></a>
           </li>
-          <li class="nav-item dropdown">
+
+
+          <li class="nav-item dropdown m-2">
             <a class="btn btn-outline-success m-2 my-sm-0 dropdown-toggle" href="/projects" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <strong>Projects</strong>
             </a>
-            <div class="btn btn-outline-success dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="btn btn dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="btn btn-outline-success dropdown-item" href="/projects">Major Project</a>
               <a class="btn btn-outline-success dropdown-item" href="#">Minor Project</a>
               <div class="dropdown-divider"></div>
               <a class="btn btn-outline-success  dropdown-item" href="#">Some other Projects</a>
             </div>
           </li>
-          <li class="nav-item">
+
+          
+          <li class="nav-item m-2">
             <a class="btn btn-outline-success" href="/about"> <strong>AboutUs</strong></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-2">
             <a class="btn btn-outline-success m-2 my-sm-0" href="/contact"> <strong>ContactUs</strong></a>
           </li>
         </ul>
+
+
+
         <form method="get" action="/search" class="form-inline my-2 my-lg-0 mx-3">
           <a href="/admin" role="button" target="_blank" class="btn btn-success m-2 my-sm-0">
             Admin Panel</a>
@@ -56,12 +65,13 @@
           Login
         </button>
         <!-- Button to  trigger SignUp modal -->
-        <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#signupModal">
+        <button type="button" class="btn btn-success mr-2 btn-border-radius: 2.25rem;" data-toggle="modal" data-target="#signupModal">
           SignUp
         </button>
-        
       </div>
-    </nav>
+    </div>
+  </nav> 
+    
   
 
     {% if messages %}
